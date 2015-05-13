@@ -1,0 +1,7 @@
+require 'Foo'
+
+foo = Foo.new
+foo.name= "Foobar"
+foo.preis= 9.99
+foo.preis = 2
+puts "Der Preis von #{foo.name} betraegt #{foo.preis}"

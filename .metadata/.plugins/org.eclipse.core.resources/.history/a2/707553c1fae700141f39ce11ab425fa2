@@ -1,0 +1,19 @@
+class Foo
+  
+  def name=(bezeichnung)
+    @name = bezeichnung
+  end
+
+  def name
+    return @name
+  end
+
+  def preis=(wert)
+    @preis = wert;
+  end
+
+  def preis
+    @preis  #return muss nicht geschrieben werden
+  end
+
+end

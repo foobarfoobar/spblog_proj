@@ -1,0 +1,25 @@
+<%= form_for(@neue_x_tabelle_y) do |f| %>
+  <% if @neue_x_tabelle_y.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@neue_x_tabelle_y.errors.count, "error") %> prohibited this neue_x_tabelle_y from being saved:</h2>
+
+      <ul>
+      <% @neue_x_tabelle_y.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :strangerName %><br>
+    <%= f.text_field :strangerName %>
+  </div>
+  <div class="field">
+    <%= f.label :nochWas %><br>
+    <%= f.text_field :nochWas %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

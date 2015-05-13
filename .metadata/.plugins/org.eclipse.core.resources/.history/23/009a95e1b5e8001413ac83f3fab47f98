@@ -1,0 +1,36 @@
+require './testKlassen'
+require_relative 'testKlassenII'
+require_relative 'testKlassenIII'
+require_relative 'testVererbung'
+
+foo = Foo.new("Barfoo")
+foo.name = "Foobar"
+foo.preis = 9.99
+foo.preis = 2
+foo.beschreibung= "Text"
+puts "Der Preis von #{foo.name} betraegt #{foo.preis} und ist #{foo.beschreibung} und #{foo.noch_was}, \
+Gesamtpreis: #{foo.gesamtpreis}\nBrutto: #{foo.brutto(10.0)}; Konst.: #{foo.foo}, Konst direkt: #{Foo::FOO}" #wichtig: 10.0 statt 10!
+
+temp = DynParam.new
+temp.werte(1, 2.3, 5.8, 0.7)
+puts "Max ist #{temp.max_temp}\nMin ist #{temp.min_temp}\nGeschuffled: #{temp.shuffle}"
+temp_var_1 = temp.werte_hash_1(breite: 1.5, laenge: 3.0, hoehe: 4.0);
+temp_var_2 = temp.werte_hash_2(10, breite: 1.5, laenge: 3.0, hoehe: 4.0)
+# temp_var_3 = temp.werte_hash_3(10, breite: 1.5, laenge: 3.0, hoehe: 4.0, 10)
+puts "Vol: #{temp_var_1}\nVol und Gew:\
+#{temp_var_2}"
+
+apfel = Produkt.new("Apfel", 0.5)
+buch = Produkt.new("Ruby", 39.99)
+gesamt = apfel + buch
+puts "Gesamtpreis #{gesamt},#{apfel.orequal}"#in orequal ist puts, wird vor diesem getriggert, hier return-value(s)
+puts Produkt.anzahl
+
+bar = Buch.new("Rails", 29.90)
+puts bar.preis;
+puts bar.isbn
+bar.isbn= "111-2222-333-4"
+puts bar.isbn
+puts Buch.ancestors#Hierarchie
+puts Buch.kind_of?(Object)
+puts Buch.instance_of?(Produkt)

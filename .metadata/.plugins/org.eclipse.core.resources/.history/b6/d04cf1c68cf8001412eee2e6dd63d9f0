@@ -1,0 +1,3 @@
+<li id="client_<%= client.id%>">
+	<%= link_to client.name, client.birthday %>
+</li>

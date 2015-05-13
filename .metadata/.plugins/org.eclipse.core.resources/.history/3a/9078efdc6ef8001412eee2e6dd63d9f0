@@ -1,0 +1,5 @@
+class Product < ActiveRecord::Base
+  def price
+    Product.read_attribute(:price)/100.0
+  end
+end

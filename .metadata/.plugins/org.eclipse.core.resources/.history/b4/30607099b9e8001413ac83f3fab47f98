@@ -1,0 +1,13 @@
+class Buch < Produkt
+  
+  def isbn= (nummer)
+    @isbn = nummer
+  end
+  
+  def isbn
+    return @isbn
+  end
+  
+  #mit attr_accessor :isbn muss man getter und setter nicht mehr schreiben
+  
+end

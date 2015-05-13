@@ -1,0 +1,13 @@
+class Foo
+  
+  def name=(bezeichnung)
+    @name = bezeichnung
+  end
+  
+  def name
+    return @name
+  end
+  
+  
+  
+end

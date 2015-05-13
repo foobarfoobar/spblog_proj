@@ -1,0 +1,28 @@
+class Testdeck
+    attr_accessor :cards
+
+myHash = {company_name: "MyCompany", street: "Mainstreet", postcode: "1234", city: "MyCity", free_seats: "3"}
+
+def cleanup string
+  string.titleize
+end
+
+def format
+  output = Hash.new
+  myHash.each do |item|
+    item[:company_name] = cleanup(item[:company_name])
+    item[:street] = cleanup(item[:street])
+    output << item
+  end
+end
+
+
+    def initialize
+        @cards = []
+        counter = 0
+        ['H','C', 'S', 'D'].product([1, 2]).each do |arr|
+          puts arr[0], arr[1]
+            @cards << Card.new(arr[0], arr[1])
+        end
+    end
+end

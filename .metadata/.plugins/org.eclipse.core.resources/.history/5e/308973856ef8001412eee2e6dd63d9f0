@@ -1,0 +1,5 @@
+class Product < ActiveRecord::Base
+  # def price
+    # self.first / 100.0
+  # end
+end

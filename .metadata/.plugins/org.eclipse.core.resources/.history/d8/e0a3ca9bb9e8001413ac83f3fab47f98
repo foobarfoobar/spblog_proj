@@ -1,0 +1,21 @@
+module RailsAir
+  class Info
+    def name
+      puts "RailsAir"
+    end
+    def home_airport
+      puts "Foo"
+    end
+  end
+end
+
+module PHPAir
+  class Info
+    def name
+      puts "PHPAir"
+    end
+    def home_airport
+      puts "Bar"
+    end
+  end
+end

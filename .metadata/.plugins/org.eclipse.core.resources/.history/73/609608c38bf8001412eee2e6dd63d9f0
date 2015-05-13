@@ -1,0 +1,10 @@
+class Client < ActiveRecord::Base
+  
+  #Ueberschreiben find mit RecordNotFound-Behandlung
+  def self.find(*args)
+    super
+  rescue ActiveRecord::RecordNotFound
+    puts "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  end
+  
+end

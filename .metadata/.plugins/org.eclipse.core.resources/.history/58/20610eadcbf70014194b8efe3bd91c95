@@ -1,0 +1,6 @@
+INSERT INTO schema_migrations (version) VALUES ('20150422123324');
+
+INSERT INTO schema_migrations (version) VALUES ('20150424091222');
+
+INSERT INTO schema_migrations (version) VALUES ('20150427101631');
+

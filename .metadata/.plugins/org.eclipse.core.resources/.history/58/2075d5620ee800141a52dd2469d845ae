@@ -1,0 +1,22 @@
+require './testKlassen'
+require_relative 'testKlassenII'
+
+foo = Foo.new("Barfoo")
+foo.name = "Foobar"
+foo.preis = 9.99
+foo.preis = 2
+foo.beschreibung= "Text"
+
+puts "Der Preis von #{foo.name} betraegt #{foo.preis} und ist #{foo.beschreibung} und #{foo.noch_was}, \
+Gesamtpreis: #{foo.gesamtpreis}\nBrutto: #{foo.brutto(10.0)}; Konst.: #{foo.foo}" #wichtig: 10.0 statt 10!
+
+temp = DynParam.new
+temp.werte(1, 2.3, 5.8, 0.7)
+puts "Max ist #{temp.max_temp}\nMin ist #{temp.min_temp}\nGeschuffled: #{temp.shuffle}"
+
+temp_var_1 = temp.werte_hash_1(breite: 1.5, laenge: 3.0, hoehe: 4.0);
+temp_var_2 = temp.werte_hash_2(10, breite: 1.5, laenge: 3.0, hoehe: 4.0)
+temp_var_3 = temp.werte_hash_3(10, breite: 1.5, laenge: 3.0, hoehe: 4.0, 10)
+
+puts "Vol: #{temp_var_1}\nVol und Gew:\
+#{temp_var_2}"

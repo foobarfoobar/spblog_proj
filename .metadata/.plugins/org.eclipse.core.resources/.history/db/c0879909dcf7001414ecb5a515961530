@@ -1,0 +1,4 @@
+class AddFieldsToClients < ActiveRecord::Migration
+  def change
+  end
+end

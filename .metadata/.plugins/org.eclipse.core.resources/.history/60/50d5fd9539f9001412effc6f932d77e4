@@ -1,0 +1,3 @@
+class Country < ActiveRecord::Base
+  has_many :airports #Klasse mit Fremdschlüssel in der Tabelle
+end

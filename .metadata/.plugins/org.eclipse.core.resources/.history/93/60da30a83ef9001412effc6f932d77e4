@@ -1,0 +1,3 @@
+class Airport < ActiveRecord::Base
+  belongs_to :country #zu dieser Klasse/Tabelle besteht die Assoziation
+end

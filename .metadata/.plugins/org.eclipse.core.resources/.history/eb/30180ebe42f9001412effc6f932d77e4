@@ -1,0 +1,6 @@
+class Country < ActiveRecord::Base
+  has_many :airports#, dependent: :destroy #Klasse mit Fremdschlüssel in der Tabelle
+      # durch has_many sind folgende Methoden verfuegbar:
+      # airports, airports <<, airports.create, airports.build, airports=, airports.find, airports.size,
+      # airports.empty?, airports.delete
+end

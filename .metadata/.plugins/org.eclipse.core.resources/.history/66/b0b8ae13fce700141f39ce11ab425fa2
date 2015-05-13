@@ -1,0 +1,10 @@
+require './testKlassen'
+#require_relative 'testKlassen'
+
+foo = Foo.new
+foo.name = "Foobar"
+foo.preis = 9.99
+foo.preis = 2
+foo.beschreibung= "Text"
+foo.noch_was= "Barfoo"
+puts "Der Preis von #{foo.name} betraegt #{foo.preis} und ist #{foo.beschreibung} und #{foo.noch_was}"

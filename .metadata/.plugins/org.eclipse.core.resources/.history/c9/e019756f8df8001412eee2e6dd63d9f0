@@ -1,0 +1,3 @@
+<li id="foo">
+	<%= render @clients %>
+</li>

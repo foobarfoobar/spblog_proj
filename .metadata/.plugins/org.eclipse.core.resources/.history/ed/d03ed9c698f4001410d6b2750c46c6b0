@@ -1,0 +1,5 @@
+class AddFreeSeatsToFlights < ActiveRecord::Migration
+  def change
+    add_column :flights, :free_seats, :integer
+  end
+end

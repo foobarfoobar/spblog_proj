@@ -1,0 +1,27 @@
+<h1>Listing neue_x_tabelle_ies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Strangername</th>
+      <th>Nochwas</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @neue_x_tabelle_ies.each do |neue_x_tabelle_y| %>
+      <tr>
+        <td><%= neue_x_tabelle_y.strangerName %></td>
+        <td><%= neue_x_tabelle_y.nochWas %></td>
+        <td><%= link_to 'Show', neue_x_tabelle_y %></td>
+        <td><%= link_to 'Edit', edit_neue_x_tabelle_y_path(neue_x_tabelle_y) %></td>
+        <td><%= link_to 'Destroy', neue_x_tabelle_y, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Neue x tabelle y', new_neue_x_tabelle_y_path %>

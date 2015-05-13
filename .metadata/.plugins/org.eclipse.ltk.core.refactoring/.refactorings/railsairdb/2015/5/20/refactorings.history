@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;railsairdb/db/migrate/20150513084447_create_join_flights_passengers.rb&apos; to &apos;20150513084447_create_flights_passengers.rb&apos;" description="Rename resource &apos;20150513084447_create_join_flights_passengers.rb&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="db/migrate/20150513084447_create_join_flights_passengers.rb" name="20150513084447_create_flights_passengers.rb" stamp="1431509244616" updateReferences="true"/>
+</session>

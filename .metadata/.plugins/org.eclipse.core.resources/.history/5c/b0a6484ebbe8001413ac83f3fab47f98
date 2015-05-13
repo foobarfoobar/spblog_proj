@@ -1,0 +1,41 @@
+module RailsAir
+  class Info
+    def name
+      puts "RailsAir"
+    end
+    def home_airport
+      puts "Foo"
+    end
+  end
+end
+
+module PHPAir
+  class Info
+    def name
+      puts "PHPAir"
+    end
+    def home_airport
+      puts "Bar"
+    end
+  end
+end
+
+module Rateable
+  attr_accessor :rating
+  def rating_stars
+    # '*' * @rating unless @rating.nil?
+    if !(@rating.nil)
+      'X'
+    end
+  end
+end
+
+class Buch2 < Produkt
+  attr_accessor :isbn
+  include Rateable  #Modul inkludieren
+end
+
+class Person
+  attr_accessor :name
+  include Rateable
+end

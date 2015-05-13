@@ -1,0 +1,11 @@
+class Testdeck
+    attr_accessor :cards
+
+    def initialize
+        @cards = []
+        counter = 0
+        ['H','C', 'S', 'D'].product [1, 2].each do |arr|
+            @cards << Card.new(arr[0], arr[1])
+        end
+    end
+end

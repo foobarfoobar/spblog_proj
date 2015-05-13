@@ -1,0 +1,4 @@
+class Flight < ActiveRecord::Base
+  has_and_belongs_to_many :passengers # in beide Klassen, Paramter jeweils der Plural der anderen Klasse;
+  # creiert die gleichen zusaetzlichen Methoden wie has_many
+end

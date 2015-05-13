@@ -1,0 +1,11 @@
+class Buch < Produkt
+  
+  def isbn= (nummer)
+    @isbn = nummer
+  end
+  
+  def isbn
+    return @isbn
+  end
+  
+end

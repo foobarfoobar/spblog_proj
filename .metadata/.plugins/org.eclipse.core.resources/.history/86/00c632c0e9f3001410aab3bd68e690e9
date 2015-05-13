@@ -1,0 +1,9 @@
+<% @title = "Nonsens" %>
+<h2>Fluege.......</h2>
+<ul>
+<% unless @flights.nil? @flights.each do |flight| %>
+ <li>
+ 	<%= link_to flight.nr, flight.created_at %>
+ </li>
+<% end %>
+</ul>

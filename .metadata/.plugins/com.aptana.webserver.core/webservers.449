@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servers>
+<server host="0.0.0.0" port="3000" project="C:/xampp/htdocs/ruby_projects/bookmarkmanager" type="org.radrails.rails.railsServer">
+<name>bookmarkmanager</name>
+</server>
+</servers>

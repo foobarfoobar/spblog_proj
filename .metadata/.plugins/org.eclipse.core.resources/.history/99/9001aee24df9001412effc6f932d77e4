@@ -1,0 +1,6 @@
+class CreateJoinFlightsPassengers < ActiveRecord::Migration
+  def change
+    create_table :join_flights_passengers, id: false do |t|
+    end
+  end
+end

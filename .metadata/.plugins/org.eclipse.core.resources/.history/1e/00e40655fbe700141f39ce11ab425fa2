@@ -1,0 +1,21 @@
+class Foo
+  
+  attr_accessor :beschreibung, noch_was
+  
+  def name=(bezeichnung)
+    @name = bezeichnung
+  end
+
+  def name
+    return @name
+  end
+
+  def preis= (wert)   #Leerzeichen nach '=' moeglich
+    @preis = wert;
+  end
+
+  def preis
+    @preis  #return muss nicht geschrieben werden
+  end
+
+end

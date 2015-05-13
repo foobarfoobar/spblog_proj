@@ -1,0 +1,44 @@
+class Foo
+  FOO = 5
+  attr_accessor :beschreibung, :noch_was #generiert getter und setter
+  #attr_reader ... generiert getter
+  #attr_write ...  generiert setter
+  
+  def initialize(noch_was_text)  #wird getriggert, wenn Foo erzeugt wird (aehnlich Constructor..)
+    @noch_was = "Barfoo"
+  end
+  
+  def name=(bezeichnung)
+    @name = bezeichnung
+  end
+
+  def name
+    return @name
+  end
+
+  def preis= (wert)   #Leerzeichen nach '=' moeglich
+    @preis = wert;
+  end
+
+  def preis
+    @preis  #return muss nicht geschrieben werden
+  end
+  
+  def kosten
+    9.5     #ebenfalls ohne return
+  end
+  
+  def gesamtpreis
+    self.preis + kosten  #this, hier nicht noetig
+  end
+  
+  def brutto (mwst_satz = 19.0)
+    (gesamtpreis * (1 + mwst_satz / 100)).round(2)
+  end
+  
+  def foo   
+    FOO    #Achtung $ nicht vergessen -> unendl. Rekursion (ruft Methode foo) wenn Konst. foo klei
+            # Zugriff von aussen: Klassenname::FOO
+  end
+
+end

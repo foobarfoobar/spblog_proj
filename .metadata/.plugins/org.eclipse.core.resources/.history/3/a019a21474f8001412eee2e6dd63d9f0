@@ -1,0 +1,8 @@
+class Product < ActiveRecord::Base
+  def price
+    read_attribute(:price)/10.0
+  end
+  def nameprice
+    "#{name} #{price}"
+  end
+end

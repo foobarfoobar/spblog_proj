@@ -1,0 +1,13 @@
+class FlightsController < ApplicationController
+  
+  def index
+    @flights = Flight.all
+    ConfirmationMailer.confirmation().deliver
+    logger.info("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+  end
+  
+  def show
+    @flight = Flight.find(params[:id])
+  end
+  
+end

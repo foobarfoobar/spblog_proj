@@ -1,0 +1,27 @@
+class Foo
+  
+  attr_accessor :beschreibung, :noch_was #generiert getter und setter
+  #attr_reader ... generiert getter
+  #attr_write ...  generiert setter
+  
+  def initialize(noch_was)  #wird getriggert, wenn Foo erzeugt wird (aehnlich Constructor..)
+    @noch_was = "Barfoo"
+  end
+  
+  def name=(bezeichnung)
+    @name = bezeichnung
+  end
+
+  def name
+    return @name
+  end
+
+  def preis= (wert)   #Leerzeichen nach '=' moeglich
+    @preis = wert;
+  end
+
+  def preis
+    @preis  #return muss nicht geschrieben werden
+  end
+
+end

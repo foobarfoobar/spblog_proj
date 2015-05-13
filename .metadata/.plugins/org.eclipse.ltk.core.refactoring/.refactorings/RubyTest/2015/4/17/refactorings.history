@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RubyTest/test.rb&apos; to &apos;testSchleifen.rb&apos;" description="Rename resource &apos;test.rb&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="test.rb" name="testSchleifen.rb" stamp="1429599841441" updateReferences="true"/>
+</session>

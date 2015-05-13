@@ -1,0 +1,22 @@
+  Szenario: Das Buchen eines ausgebuchten Fluges soll nicht möglich sein
+    Gegeben sei ein Flug RA-448 von DUS nah LUX mit 0 freien Plätzen
+    Wenn ich den Flug RA-448 auswähle
+    Dann soll mir angezeigt werden, dass der Flug ausgebucht ist
+    
+
+
+
+
+
+
+Gegebensei(/^ein Flug RA\-(\d+) von DUS nah LUX mit (\d+) freien Plätzen$/) do |nr, anz|
+  flight = Flight.create(nr: nr, free_seats: anz)
+end
+
+Wenn(/^ich den Flug RA\-(\d+) auswähle$/) do |arg1|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Dann(/^soll mir angezeigt werden, dass der Flug ausgebucht ist$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end

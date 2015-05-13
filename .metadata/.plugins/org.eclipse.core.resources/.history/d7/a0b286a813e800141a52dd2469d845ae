@@ -1,0 +1,43 @@
+#Tests dynamic params and related stuff
+class DynParam
+  #Takes the values and computes <i>min</i> and <i>max</i>
+  #@param werte_liste {Array} the values
+  def werte (*werte_liste)
+    @max = werte_liste.max
+    @min = werte_liste.min
+    @liste = werte_liste
+  end
+
+  #max wert
+  #@return [Fixnum] the <b>max</b> of <i>werte_liste</i>
+  def max_temp
+    @max
+  end
+
+  #min wert
+  #@return [Fixnum] the <b>min</b> of <i>werte_liste</i>
+  def min_temp
+    @min
+  end
+
+  #Shuffles the list
+  #@return [Array] a shuffled representation of <i>werte_liste</i>
+  def shuffle
+    @liste.shuffle!
+  end
+
+  def werte_hash_1(values)
+    qwertz = values[:laenge] * values[:breite] * values[:hoehe]
+    ztrewq = values.symbolize_keys
+    return qwertz
+  end
+
+  def werte_hash_2(gewicht, values)
+    return (values[:laenge] * values[:breite] * values[:hoehe]) * gewicht
+  end
+
+  # def werte_hash_3(gewicht, values={}, noch_was) funzt nicht
+    # return (values[:laenge] * values[:breite] * values[:hoehe]) * gewicht
+  # end
+
+end

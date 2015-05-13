@@ -1,0 +1,6 @@
+<% @title = "Nonsens" %>
+<h2><%= t("text.list_of_bookmarks")%></h2>
+<ul>
+	<%= render @bookmarks %> <!-- rendert Inhalt der Partial _bookmark.html.erb; kann hier so aufgerufen werden, 
+		da Partial-Datei wie Instanzvariable heißt, sonst: _ruby_tag_start render partial: "bookmark", collection: @bookmarks _ruby_tag_end-->
+</ul>

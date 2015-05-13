@@ -1,0 +1,5 @@
+class Product < ActiveRecord::Base
+  def price
+    Product.public_send(:price)/10.0
+  end
+end

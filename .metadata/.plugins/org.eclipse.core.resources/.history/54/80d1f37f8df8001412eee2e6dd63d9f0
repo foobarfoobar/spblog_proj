@@ -1,0 +1,5 @@
+<ul>
+  <% @clients.each do |flight| %>
+    <li><%= link_to @client.name %></li>
+  <% end %>
+</ul>
