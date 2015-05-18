@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20150513124423) do
   create_table "flights", force: true do |t|
     t.string   "nr"
     t.integer  "departure_airport_id"
-    t.string   "arrival_airport_id"
+    t.integer  "arrival_airport_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
