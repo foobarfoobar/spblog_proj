@@ -1,0 +1,33 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+table {
+  border-collapse: collapse;
+}
+
+table tr td {
+  padding: 10px;
+}
+
+// TableHeader
+thead {
+  text-align: left;
+  background: #00308f;
+  // Textcolor white 
+  color: #fff;
+}
+
+// TableHeader - Spalten
+thead th {
+  padding: 10px;
+}
+
+// Klassen fuer Tabellenzeilen
+.list_line_even {
+  background: #FAEBD7;
+}
+
+.list_line_odd {
+  background: #FEFEFA;
+}
