@@ -41,7 +41,7 @@ module ApplicationHelper
       x += 1
       break if x > 10
     end
-    "#{number_list}"
+    "#{number_list}" #Rueckgabewert
   end
 
 end
