@@ -15,7 +15,7 @@ file.close
 puts File.read("authors.out")
 
 # Open file for appending
-file = File.new("authors.out", "a")
+file = File.new("authors.out", "a") #File.open("authors.out", "a") auch open moeglich
 file.puts "Danielle Steel"
 file.close
 puts File.read("authors.out")
@@ -30,7 +30,7 @@ file.close
 
 # Cycle through the data to write a sentence
 File.open("author_info.out") do |record|
-  record.each do |item|
+  record.each do |item| #jede Zeile...
 
     # Split each line into 4 parts based on commas
     name, lang, specialty, sales = item.chomp.split(',')
