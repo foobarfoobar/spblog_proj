@@ -2,7 +2,7 @@
 
 # A hash is a collection of key object pairs
 
-number_hash = { "PI" => 3.14,
+number_hash = { "PI" => 3.14,      # oder :PI, 3.14
                 "Golden" => 1.618,
                 "e" => 2.718}
 
@@ -22,8 +22,7 @@ puts samp_hash["Dog"]
 
 superheroines = Hash["Lisa Morel", "Aquagirl", "Betty Kane", "Batgirl"]
 
-# Combine 2 hashes in a destructive way with update or with no overwriting
-# with merge
+# Combine 2 hashes in a destructive way with update or with no overwriting with merge
 
 superheroes.update(superheroines)
 

@@ -12,7 +12,7 @@ puts (age >= 50) ? "Old" : "Young"
 #UNLESS Executes code if conditional is false. If the conditional is true,
 #code specified in the else clause is executed.
 x=1
-unless x>2
+unless x>2 # wenn x nicht groesser 2
    puts "x is less than 2"
  else
   puts "x is greater than 2"
@@ -38,7 +38,7 @@ end
     n = 1
     loop do
     n = n + 1
-    next unless n == 10 #continue solange x != 10, sonst print Good
+    next unless n == 10 #continue solange x != 10, sonst print Good und breake
     print "Good"
     break
     end
@@ -50,7 +50,7 @@ y = 1
  
 while y <= 10
   y += 1
-  next unless (y % 2) == 0
+  next unless (y % 2) == 0 # same output as loop above
   puts y
   # break if y >= 10
 end
@@ -59,7 +59,7 @@ z = 1
  
 begin
   z += 1
-  next unless (z % 2) == 0
+  next unless (z % 2) == 0 # same output...
   puts z
   break if z >= 10
 end while z <= 10
@@ -71,7 +71,7 @@ a = 1
  
 until a >= 10  #bis a >= 10
   a += 1
-  next unless (a % 2) == 0
+  next unless (a % 2) == 0 # ...
   puts a
 end
  

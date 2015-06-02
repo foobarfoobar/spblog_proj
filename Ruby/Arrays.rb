@@ -3,7 +3,7 @@
 # Creating arrays
 
 array_1 = Array.new
-array_2 = Array.new(5) # Gets nil as default
+array_2 = Array.new(5) # Gets 5 elements with nil as default
 array_3 = Array.new(5, "empty")
 array_4 = [1,"two",3,5.5] # You can store multiple object types
 

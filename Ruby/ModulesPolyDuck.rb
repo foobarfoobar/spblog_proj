@@ -20,6 +20,13 @@ end
 
 rover = Dog.new
 rover.make_sound
+#TODO <<
+class << rover
+  def foo
+    puts "Hello."
+  end
+end
+rover.foo
 
 class Scientist
   include Human

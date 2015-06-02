@@ -19,8 +19,8 @@ case greeting
 when "French", "french"
   puts "Bonjour"
  
-  # without end it would check the next condition
-  exit
+  # without exit it would check the next condition ---> it does not..
+  # exit
  
 when "Spanish", "spanish"
   puts "Hola"
