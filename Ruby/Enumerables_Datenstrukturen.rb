@@ -105,7 +105,7 @@ end #=> [1,2]
 #Einen Array zu einem Wert reduzieren: 
 foo = [1,2,3] 
 foo.inject(0) do |val, number|
- val + number #?????????
+ val + number #??????????
 end #=> 6
 
 #Sowie beliebige Kombinationen, zum Beispiel die Summe aller Quadratzahlen eines Arrays: 
