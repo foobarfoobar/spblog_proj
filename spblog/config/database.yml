@@ -16,7 +16,7 @@ default: &default
   username: root
   password: 1234
   host: localhost
-  socket: MySQL
+  socket: MySQL #for communication between Rails and the DB on Unix systems
 
 development:
   <<: *default
