@@ -1,0 +1,11 @@
+html {
+  font-size: $main-font-size;
+}
+
+// Use border-box so padding fits in elements width / height
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  // -ie-box-sizing: border-box;     TODO: try!
+  box-sizing: border-box;
+}
