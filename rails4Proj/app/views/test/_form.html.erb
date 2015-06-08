@@ -1,0 +1,41 @@
+<%= form_for(@post) do |f| %>
+
+<% if @post.errors.any? %> <!-- Fehlerbehandlung bzw Anzeige -->
+<div id="error_explanation">
+	<h2>pluralize(@post.errors.count, "error")</h2>
+	<ul>
+		<% @post.errors.full_messages.each do |msg| %>
+		<li>
+			<%= msg %>
+		</li>
+		<% end %>
+	</ul>
+</div>
+<% end %>
+
+<div class="field">
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+</div>
+<div class="field">
+	<%= f.label :body %>
+	<%= f.text_area :body %>
+</div>
+<div class="field">
+	<%= f.label :category %>
+	<%= f.collection_select :category_id, Category.all, :id, :name %>
+	<!-- cat.._id: Attribut fuer Model, Category.all: Liste mit moeglichen Werten -->
+	 
+</div>
+<div class="field">
+	<%= f.label :category_id, "Category" %>
+	<%= f.collection_radio_buttons :category_id, Category.all, :id, :name do |b| %>
+	<%= b.label(:"data-value" => b.value) { b.radio_button + " " + b.text} %>
+	<!-- <%= f.collection_check_boxes :post_id, Post.all, :id, :title do |c| %> -->
+	<!-- <%= c.label(:"data-value" => c.value) { c.check_box + " " + c.text} %> -->
+	<% end %>
+</div>
+<div class="actions">
+	<%= f.submit class: "btn btn-primary"%>
+</div>
+<% end %>
